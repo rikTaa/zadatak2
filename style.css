@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-top: 50.8vh;
+  margin-left: 50.4vw;
+  position: absolute;
+  background-color: gray;
+  padding: 35px 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: red #32a1ce;
+  display: inline-block;
+  margin-top: 50vh;
+  margin-left: 50vw;
+
+  -webkit-animation: dot 4s linear infinite;
+  -moz-animation: dot 4s linear infinite;
+  -ms-animation: dot 4s linear infinite;
+  -o-animation: dot 4s linear infinite;
+  animation: dot 4s linear infinite;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.reverseDot {
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: #32a1ce red;
+  display: inline-block;
+  margin-top: 50vh;
+  margin-left: 50vw;
+
+  -webkit-animation: dot 4s linear infinite;
+  -moz-animation: dot 4s linear infinite;
+  -ms-animation: dot 4s linear infinite;
+  -o-animation: dot 4s linear infinite;
+  animation: dot 4s linear infinite;
+  animation-direction: reverse;
+}
+
+.reverseDot:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dot {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
